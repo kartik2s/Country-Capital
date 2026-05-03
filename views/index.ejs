@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Capitals</title>
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+
+<body id="app">
+    <div class="container">
+        <form action="/submit" method="post">
+            <h2>Total Score:
+                <span>
+                    <% if (locals.totalScore) { %>
+                        <%= totalScore %>
+                            <% } else { %>
+                                0
+                                <% } %>
+                </span>
+            </h2>
+
+            <h1>
+                <%= question.country %>
+            </h1>
+            <input type="text" name="answer" placeholder="Enter the capital" autofocus autocomplete="off">
+            <button type="submit">submit
+                <% if(locals.wasCorrect) { %>
+                    <span>✔</span>
+                    <% } else if(locals.wasCorrect===false){ %>
+                        <span>✖</span>
+                        <% } %>
+            </button>
+        </form>
+    </div>
+
+    <script>
+        var wasCorrect = "<%= locals.wasCorrect %>";
+        console.log(wasCorrect);
+        if (wasCorrect === "false") {
+            alert("game over final score <%= locals.totalScore %>");
+            document.getElementById("app").innerHTML = '<a href="/" > restart</a>'
+        }
+    </script>
+</body>
+
+</html>
