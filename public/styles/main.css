@@ -1,76 +1,76 @@
 #app {
-  background: linear-gradient(135deg, #7fecd2, #a1c4fd);
-  min-height: 100vh;
-  font-family: Arial, sans-serif;
-  margin: 0;
+    background: linear-gradient(135deg, #7fecd2, #a1c4fd);
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    margin: 0;
 }
 
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 form {
-  background: white;
-  padding: 30px 40px;
-  border-radius: 15px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-  text-align: center;
-  width: 450px;
+    background: white;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 450px;
 }
 
 h2 {
-  margin-bottom: 20px;
-  color: #333;
+    margin-bottom: 20px;
+    color: #333;
 }
 
 h2 span {
-  color: #007bff;
-  font-weight: bold;
+    color: #007bff;
+    font-weight: bold;
 }
 
 h1 {
-  margin-bottom: 20px;
-  color: #222;
+    margin-bottom: 20px;
+    color: #222;
 }
 
 input {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
 }
 
 button {
-  width: 50%;
-  padding: 10px;
-  margin: 20px auto;
-  border: none;
-  border-radius: 8px;
-  background-color: #007bff;
-  color: white;
-  font-size: 16px;
-  cursor: pointer;
-  transition: 0.3s;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 button:hover {
-  background-color: #0056b3;
+    background-color: #0056b3;
 }
 
 button span {
-  margin-left: 8px;
-  font-size: 18px;
+    margin-left: 8px;
+    font-size: 18px;
 }
 
 a {
-  display: inline-block;
-  margin-top: 20px;
-  font-size: 20px;
-  text-decoration: none;
-  color: #007bff;
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #007bff;
 }
